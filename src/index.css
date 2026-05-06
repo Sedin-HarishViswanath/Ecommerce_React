@@ -15,6 +15,40 @@ body {
   text-decoration: none;
 }
 
+.filter-container {
+  padding: 20px;
+  background: #f5f5f5;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.filter-container h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.filter-container button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.filter-container button:hover {
+  background: #e0e0e0;
+}
+
+.filter-container button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(

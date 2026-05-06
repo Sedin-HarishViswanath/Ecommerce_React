@@ -1,9 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import {
-  removeFromCart,
-  increaseQty,
-  decreaseQty
-} from "../features/cart/cartSlice";
+import { removeFromCart, increaseQty, decreaseQty} from "../features/cart/cartSlice";
 
 const CartPage=()=>{
   const dispatch = useDispatch();
@@ -28,7 +24,7 @@ const CartPage=()=>{
 
           <p>Qty: {item.quantity}</p>
 
-          <button onClick={() =>dispatch(increaseQty(item.id)) } >+</button>
+          <button onClick={() =>dispatch(increaseQty(item.id)) } > + </button>
 
           <button onClick={() =>dispatch(decreaseQty(item.id))}> - </button>
 
